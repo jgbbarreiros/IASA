@@ -1,20 +1,20 @@
 package plantraj.modprob;
 
 import pee.Estado;
-import pee.Operador;
 import pee.Problema;
 
 public class ProblemaTrajecto extends Problema {
+	
+	private EstadoLocalidade estadoFinal;
 
-	public ProblemaTrajecto(Estado estadoInicial, Operador[] operadores) {
-		super(estadoInicial, operadores);
-		// TODO Auto-generated constructor stub
+	public ProblemaTrajecto(String locIni, String locFim, OperadorLigacao[] operadores) {
+		super(new EstadoLocalidade(locIni), operadores);
+		estadoFinal = new EstadoLocalidade(locFim);
 	}
 
 	@Override
 	public boolean objectivo(Estado estado) {
-		// TODO Auto-generated method stub
-		return false;
+		return estado.equals(estadoFinal);
 	}
 
 }
