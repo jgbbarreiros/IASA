@@ -1,5 +1,5 @@
 package pee;
 
-public class Estado {
+public abstract class Estado {
 
 }

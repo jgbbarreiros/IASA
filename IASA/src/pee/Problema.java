@@ -1,6 +1,6 @@
 package pee;
 
-public class Problema {
+public abstract class Problema {
 	
 	private Estado estadoInicial;
 	private Operador[] operadores;
@@ -10,9 +10,7 @@ public class Problema {
 		this.operadores = operadores;
 	}
 	
-	public boolean objectivo(Estado estado) {
-		return false;
-	}
+	public abstract boolean objectivo(Estado estado);
 
 	public Estado getEstadoInicial() {
 		return estadoInicial;

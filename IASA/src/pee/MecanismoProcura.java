@@ -24,10 +24,24 @@ public class MecanismoProcura {
 	}
 	
 	public Solucao gerarSolucao(No no) {
-		return null;
+		Solucao solucao = new Solucao();
+		No noTemp = no;
+		while(noTemp != null) {
+			solucao.juntarInicio(noTemp);
+			noTemp = noTemp.getAntecessor();
+		}
+		return solucao;
 	}
 	
 	private void expandir(No no) {
-		
+		Estado estado = no.getEstado();
+		Operador[] operadores = problema.getOperadores();
+		for (Operador operador : operadores) {
+			Estado estadoSuc = operador.aplicar(estado);
+			if(estadoSuc != null) {
+				No noSuc = new No(estadoSuc, operador, no);
+				memoriaProcura.inserir(noSuc);
+			}
+		}
 	}
 }

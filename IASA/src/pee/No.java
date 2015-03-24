@@ -8,10 +8,12 @@ public class No {
 	
 	public No(Estado estado) {
 		this.estado = estado;
+		this.operador = null;
+		this.antecessor = null;
 	}
 	
 	public No(Estado estado, Operador operador, No antecessor) {
-		this.estado = estado;
+		this(estado);
 		this.operador = operador;
 		this.antecessor = antecessor;
 	}
