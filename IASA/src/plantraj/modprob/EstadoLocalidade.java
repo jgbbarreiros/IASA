@@ -15,4 +15,9 @@ public class EstadoLocalidade extends Estado {
 		return loc.hashCode();
 	}
 
+	@Override
+	public String toString() {
+		return loc;
+	}
+
 }
