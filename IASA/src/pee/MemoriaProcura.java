@@ -6,6 +6,10 @@ public class MemoriaProcura {
 	
 	private LinkedList<No> fronteira;
 	
+	public MemoriaProcura() {
+		this.fronteira = new LinkedList<No>();
+	}
+
 	public void limpar() {
 		fronteira.clear();
 	}
