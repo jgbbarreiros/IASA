@@ -7,9 +7,9 @@ public class OperadorLigacao implements Operador {
 	
 	private Estado estadoOrigem;
 	private Estado estadoDestino;
-	private Float custo;
+	private float custo;
 
-	public OperadorLigacao(String locOrigem, String locDestino, Float custo) {
+	public OperadorLigacao(String locOrigem, String locDestino, float custo) {
 		estadoOrigem = new EstadoLocalidade(locOrigem);
 		estadoDestino = new EstadoLocalidade(locDestino);
 		this.custo = custo;
@@ -17,8 +17,8 @@ public class OperadorLigacao implements Operador {
 	
 	@Override
 	public Estado aplicar(Estado estado) {
-		if (estado.equals(estadoOrigem));
-			
+		if (estado.equals(estadoOrigem))
+			return estadoDestino;
 		return null;
 	}
 
