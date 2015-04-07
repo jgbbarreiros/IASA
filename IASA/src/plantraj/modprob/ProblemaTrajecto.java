@@ -1,9 +1,8 @@
 package plantraj.modprob;
 
-import pee.Estado;
 import pee.Problema;
 
-public class ProblemaTrajecto extends Problema {
+public class ProblemaTrajecto extends Problema<EstadoLocalidade> {
 	
 	private EstadoLocalidade estadoFinal;
 
@@ -13,7 +12,7 @@ public class ProblemaTrajecto extends Problema {
 	}
 
 	@Override
-	public boolean objectivo(Estado estado) {
+	public boolean objectivo(EstadoLocalidade estado) {
 		return estado.equals(estadoFinal);
 	}
 

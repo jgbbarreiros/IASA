@@ -1,32 +1,32 @@
 package pee;
 
-public class No {
+public class No<E extends Estado> {
 	
-	private Estado estado;
-	private Operador operador;
-	private No antecessor;
+	private E estado;
+	private Operador<E> operador;
+	private No<E> antecessor;
 	
-	public No(Estado estado) {
+	public No(E estado) {
 		this.estado = estado;
 		this.operador = null;
 		this.antecessor = null;
 	}
 	
-	public No(Estado estado, Operador operador, No antecessor) {
+	public No(E estado, Operador<E> operador, No<E> antecessor) {
 		this(estado);
 		this.operador = operador;
 		this.antecessor = antecessor;
 	}
 
-	public Estado getEstado() {
+	public E getEstado() {
 		return estado;
 	}
 	
-	public Operador getOperador() {
+	public Operador<E> getOperador() {
 		return operador;
 	}
 	
-	public No getAntecessor() {
+	public No<E> getAntecessor() {
 		return antecessor;
 	}
 	

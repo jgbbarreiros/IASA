@@ -1,22 +1,22 @@
 package pee;
 
-public abstract class Problema {
+public abstract class Problema<E extends Estado> {
 	
-	private Estado estadoInicial;
-	private Operador[] operadores;
+	private E estadoInicial;
+	private Operador<E>[] operadores;
 	
-	public Problema(Estado estadoInicial, Operador[] operadores) {
+	public Problema(E estadoInicial, Operador<E>[] operadores) {
 		this.estadoInicial = estadoInicial;
 		this.operadores = operadores;
 	}
 	
-	public abstract boolean objectivo(Estado estado);
+	public abstract boolean objectivo(E estado);
 
-	public Estado getEstadoInicial() {
+	public E getEstadoInicial() {
 		return estadoInicial;
 	}
 	
-	public Operador[] getOperadores() {
+	public Operador<E>[] getOperadores() {
 		return operadores;
 	}
 	

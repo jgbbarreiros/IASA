@@ -3,6 +3,7 @@ package plantraj;
 import pee.MecanismoProcura;
 import pee.No;
 import pee.Solucao;
+import plantraj.modprob.EstadoLocalidade;
 import plantraj.modprob.OperadorLigacao;
 import plantraj.modprob.ProblemaTrajecto;
 
@@ -25,9 +26,9 @@ public class PlaneadorTrajectos {
 		return operadores;
 	}
 	
-	private static void mostrarTrajecto(Solucao solucao) {
+	private static void mostrarTrajecto(Solucao<EstadoLocalidade> solucao) {
 		if (solucao != null) {
-			for (No no : solucao) {
+			for (No<EstadoLocalidade> no : solucao) {
 				System.out.printf("Localidade: %s\n", no.getEstado());
 			}
 		}
@@ -42,9 +43,9 @@ public class PlaneadorTrajectos {
 		ProblemaTrajecto problema = new ProblemaTrajecto("loc0", "loc4", operadores);
 		
 		//Procurar solucao
-		MecanismoProcura mecProc = new MecanismoProcura();
+		MecanismoProcura<EstadoLocalidade> mecProc = new MecanismoProcura<EstadoLocalidade>();
 		// é preciso fazer na class solucao a implementacao Iterable
-		Solucao solucao = mecProc.procurar(problema);
+		Solucao<EstadoLocalidade> solucao = mecProc.procurar(problema);
 		
 		//Mostrar Trajecto
 		mostrarTrajecto(solucao);

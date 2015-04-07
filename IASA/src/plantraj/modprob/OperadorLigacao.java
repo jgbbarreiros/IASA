@@ -1,12 +1,11 @@
 package plantraj.modprob;
 
-import pee.Estado;
 import pee.Operador;
 
-public class OperadorLigacao implements Operador {
+public class OperadorLigacao implements Operador<EstadoLocalidade> {
 	
-	private Estado estadoOrigem;
-	private Estado estadoDestino;
+	private EstadoLocalidade estadoOrigem;
+	private EstadoLocalidade estadoDestino;
 	private float custo;
 
 	public OperadorLigacao(String locOrigem, String locDestino, float custo) {
@@ -16,7 +15,7 @@ public class OperadorLigacao implements Operador {
 	}
 	
 	@Override
-	public Estado aplicar(Estado estado) {
+	public EstadoLocalidade aplicar(EstadoLocalidade estado) {
 		if (estado.equals(estadoOrigem))
 			return estadoDestino;
 		return null;

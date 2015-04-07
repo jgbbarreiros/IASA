@@ -1,19 +1,19 @@
 package pee;
 
-public class MecanismoProcura {
+public class MecanismoProcura<E extends Estado> {
 	
-	private MemoriaProcura memoriaProcura = new MemoriaProcura();
-	private Problema problema;
+	private MemoriaProcura<E> memoriaProcura = new MemoriaProcura<E>();
+	private Problema<E> problema;
 	
-	public Solucao procurar(Problema problema) {
+	public Solucao<E> procurar(Problema<E> problema) {
 		this.problema = problema;
 		memoriaProcura.limpar();
-		Estado estadoInicial = problema.getEstadoInicial();
-		No noInicial = new No(estadoInicial);
+		E estadoInicial = problema.getEstadoInicial();
+		No<E> noInicial = new No<E>(estadoInicial);
 		memoriaProcura.inserir(noInicial);
 		while(!memoriaProcura.fronteiraVazia()) {
-			No no = memoriaProcura.remover();
-			Estado estado = no.getEstado();
+			No<E> no = memoriaProcura.remover();
+			E estado = no.getEstado();
 			boolean resultado = problema.objectivo(estado);
 			if(resultado)
 				return gerarSolucao(no);
@@ -23,9 +23,9 @@ public class MecanismoProcura {
 		return null;
 	}
 	
-	public Solucao gerarSolucao(No no) {
-		Solucao solucao = new Solucao();
-		No noTemp = no;
+	public Solucao<E> gerarSolucao(No<E> no) {
+		Solucao<E> solucao = new Solucao<E>();
+		No<E> noTemp = no;
 		while(noTemp != null) {
 			solucao.juntarInicio(noTemp);
 			noTemp = noTemp.getAntecessor();
@@ -33,13 +33,13 @@ public class MecanismoProcura {
 		return solucao;
 	}
 	
-	private void expandir(No no) {
-		Estado estado = no.getEstado();
-		Operador[] operadores = problema.getOperadores();
-		for (Operador operador : operadores) {
-			Estado estadoSuc = operador.aplicar(estado);
+	private void expandir(No<E> no) {
+		E estado = no.getEstado();
+		Operador<E>[] operadores = problema.getOperadores();
+		for (Operador<E> operador : operadores) {
+			E estadoSuc = operador.aplicar(estado);
 			if(estadoSuc != null) {
-				No noSuc = new No(estadoSuc, operador, no);
+				No<E> noSuc = new No<E>(estadoSuc, operador, no);
 				memoriaProcura.inserir(noSuc);
 			}
 		}

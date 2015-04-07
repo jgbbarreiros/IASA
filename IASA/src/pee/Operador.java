@@ -1,7 +1,7 @@
 package pee;
 
-public interface Operador {
+public interface Operador<E extends Estado> {
 	
-	Estado aplicar(Estado estado);
+	E aplicar(E estado);
 
 }
