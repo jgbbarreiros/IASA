@@ -1,10 +1,9 @@
 package respuzzle.modprob;
 
-import pee.Estado;
 import pee.Problema;
 import puzzle.Puzzle;
 
-public class ProblemaPuzzle extends Problema {
+public class ProblemaPuzzle extends Problema<EstadoPuzzle> {
 	
 	private EstadoPuzzle estadoFinal;
 
@@ -14,7 +13,7 @@ public class ProblemaPuzzle extends Problema {
 	}
 
 	@Override
-	public boolean objectivo(Estado estado) {
+	public boolean objectivo(EstadoPuzzle estado) {
 		return estado.equals(estadoFinal);
 	}
 }
