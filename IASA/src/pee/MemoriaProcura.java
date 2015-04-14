@@ -1,13 +1,13 @@
 package pee;
 
-import java.util.LinkedList;
+import java.util.Queue;
 
 public class MemoriaProcura<E extends Estado> {
 	
-	private LinkedList<No<E>> fronteira;
+	private Queue<No<E>> fronteira;
 	
-	public MemoriaProcura() {
-		this.fronteira = new LinkedList<No<E>>();
+	public MemoriaProcura(Queue<No<E>> fronteira) {
+		this.fronteira = fronteira;
 	}
 
 	public void limpar() {
@@ -15,11 +15,11 @@ public class MemoriaProcura<E extends Estado> {
 	}
 	
 	public void inserir(No<E> no) {
-		fronteira.add(0, no);
+		fronteira.add(no);
 	}
 	
 	public No<E> remover() {
-		return fronteira.removeFirst();
+		return fronteira.poll();
 	}
 	
 	public boolean fronteiraVazia() {

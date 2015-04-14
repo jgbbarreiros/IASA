@@ -1,10 +1,16 @@
 package pee;
 
-public class MecanismoProcura<E extends Estado> {
+public abstract class MecanismoProcura<E extends Estado> {
 	
-	private MemoriaProcura<E> memoriaProcura = new MemoriaProcura<E>();
+	private MemoriaProcura<E> memoriaProcura;
 	private Problema<E> problema;
 	
+	public MecanismoProcura() {
+		memoriaProcura = iniciarMemoria();
+	}
+	
+	protected abstract MemoriaProcura<E> iniciarMemoria();
+
 	public Solucao<E> procurar(Problema<E> problema) {
 		this.problema = problema;
 		memoriaProcura.limpar();

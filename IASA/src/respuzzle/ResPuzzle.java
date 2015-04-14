@@ -2,6 +2,7 @@ package respuzzle;
 
 import pee.MecanismoProcura;
 import pee.No;
+import pee.ProcuraProf;
 import pee.Solucao;
 import puzzle.Puzzle;
 import respuzzle.modprob.EstadoPuzzle;
@@ -53,7 +54,7 @@ public class ResPuzzle {
 		ProblemaPuzzle problema = new ProblemaPuzzle(puzzleE, puzzleFim, operadores);
 		
 		//Procurar solucao
-		MecanismoProcura<EstadoPuzzle> mecProc = new MecanismoProcura<EstadoPuzzle>();
+		MecanismoProcura<EstadoPuzzle> mecProc = new ProcuraProf<EstadoPuzzle>();
 		// é preciso fazer na class solucao a implementacao Iterable
 		Solucao<EstadoPuzzle> solucao = mecProc.procurar(problema);
 		

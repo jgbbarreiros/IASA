@@ -2,6 +2,7 @@ package plantraj;
 
 import pee.MecanismoProcura;
 import pee.No;
+import pee.ProcuraProf;
 import pee.Solucao;
 import plantraj.modprob.EstadoLocalidade;
 import plantraj.modprob.OperadorLigacao;
@@ -43,7 +44,7 @@ public class PlaneadorTrajectos {
 		ProblemaTrajecto problema = new ProblemaTrajecto("loc0", "loc4", operadores);
 		
 		//Procurar solucao
-		MecanismoProcura<EstadoLocalidade> mecProc = new MecanismoProcura<EstadoLocalidade>();
+		MecanismoProcura<EstadoLocalidade> mecProc = new ProcuraProf<EstadoLocalidade>();
 		// é preciso fazer na class solucao a implementacao Iterable
 		Solucao<EstadoLocalidade> solucao = mecProc.procurar(problema);
 		
