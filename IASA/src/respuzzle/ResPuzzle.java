@@ -2,7 +2,7 @@ package respuzzle;
 
 import pee.MecanismoProcura;
 import pee.No;
-import pee.ProcuraProf;
+import pee.ProcuraLarg;
 import pee.Solucao;
 import puzzle.Puzzle;
 import respuzzle.modprob.EstadoPuzzle;
@@ -29,19 +29,18 @@ public class ResPuzzle {
 			}
 		}
 	}
-
 	
 	public static void main(String[] args) {
 		
 		int[][] confpuzzleA = {{1,2,3}, {8,4,5}, {6,7,0}};
 		int[][] confpuzzleB = {{8,4,5}, {6,1,2}, {3,7,0}};
 		int[][] confpuzzleE = {{1,2,3}, {4,5,6}, {7,0,8}};
-		int[][] confpuzzleFinal = {{1,2,3}, {4,5,6}, {7,8,0}};
+		int[][] confpuzzleFim = {{1,2,3}, {4,5,6}, {7,8,0}};
 		
 		Puzzle puzzleA = new Puzzle(confpuzzleA);
 		Puzzle puzzleB = new Puzzle(confpuzzleB);
 		Puzzle puzzleE = new Puzzle(confpuzzleE);
-		Puzzle puzzleFim = new Puzzle(confpuzzleFinal);
+		Puzzle puzzleFim = new Puzzle(confpuzzleFim);
 		
 //		Puzzle puzzle2 = puzzleA.movimentar(Puzzle.Movimento.CIMA);
 //		
@@ -51,10 +50,10 @@ public class ResPuzzle {
 		OperadorMoverPosVazia[] operadores = definirOperadores();
 		
 		//Definir problema
-		ProblemaPuzzle problema = new ProblemaPuzzle(puzzleE, puzzleFim, operadores);
+		ProblemaPuzzle problema = new ProblemaPuzzle(puzzleA, puzzleFim, operadores);
 		
 		//Procurar solucao
-		MecanismoProcura<EstadoPuzzle> mecProc = new ProcuraProf<EstadoPuzzle>();
+		ProcuraLarg<EstadoPuzzle> mecProc = new ProcuraLarg<EstadoPuzzle>();
 		// é preciso fazer na class solucao a implementacao Iterable
 		Solucao<EstadoPuzzle> solucao = mecProc.procurar(problema);
 		

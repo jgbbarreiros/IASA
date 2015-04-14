@@ -18,5 +18,11 @@ public class OperadorMoverPosVazia implements Operador<EstadoPuzzle> {
 			return null;
 		return new EstadoPuzzle(novoPuzzle);
 	}
+
+	@Override
+	public Double custo(EstadoPuzzle estado, EstadoPuzzle estadoSuc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

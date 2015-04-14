@@ -2,7 +2,7 @@ package pee;
 
 import java.util.Comparator;
 
-public class ProcuraMelhorPrim<E extends Estado> extends MecanismoProcura<E> implements Comparator<No<E>> {
+public abstract class ProcuraMelhorPrim<E extends Estado> extends MecanismoProcura<E> implements Comparator<No<E>> {
 
 	@Override
 	protected MemoriaProcura<E> iniciarMemoria() {
@@ -11,8 +11,9 @@ public class ProcuraMelhorPrim<E extends Estado> extends MecanismoProcura<E> imp
 
 	@Override
 	public int compare(No<E> no1, No<E> no2) {
-		// TODO Auto-generated method stub
-		return 0;
+		return Double.compare(F(no1), F(no2));
 	}
+	
+	protected abstract double F(No<E> no);
 
 }

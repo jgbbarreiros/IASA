@@ -10,8 +10,12 @@ public abstract class MecanismoProcura<E extends Estado> {
 	}
 	
 	protected abstract MemoriaProcura<E> iniciarMemoria();
-
+	
 	public Solucao<E> procurar(Problema<E> problema) {
+		return procurar(problema, Integer.MAX_VALUE);
+	}
+	
+	public Solucao<E> procurar(Problema<E> problema, int profMax) {
 		this.problema = problema;
 		memoriaProcura.limpar();
 		E estadoInicial = problema.getEstadoInicial();
@@ -23,8 +27,9 @@ public abstract class MecanismoProcura<E extends Estado> {
 			boolean resultado = problema.objectivo(estado);
 			if(resultado)
 				return gerarSolucao(no);
-			else
+			else if (no.getProfundidade() < profMax) {
 				expandir(no);
+			}
 		}
 		return null;
 	}

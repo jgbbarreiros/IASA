@@ -7,6 +7,4 @@ public class ProcuraProf<E extends Estado> extends MecanismoProcura<E> {
 		return new MemoriaFIFO<E>();
 	}
 
-	
-
 }
