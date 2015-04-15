@@ -24,5 +24,10 @@ public class OperadorMoverPosVazia implements Operador<EstadoPuzzle> {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public String toString() {
+		return "" + mov;
+	}
 	
 }
