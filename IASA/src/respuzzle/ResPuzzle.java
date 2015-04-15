@@ -1,8 +1,7 @@
 package respuzzle;
 
-import pee.MecanismoProcura;
 import pee.No;
-import pee.ProcuraLarg;
+import pee.ProcuraProf;
 import pee.Solucao;
 import puzzle.Puzzle;
 import respuzzle.modprob.EstadoPuzzle;
@@ -25,7 +24,10 @@ public class ResPuzzle {
 	private static void mostrarTrajecto(Solucao<EstadoPuzzle> solucao) {
 		if (solucao != null) {
 			for (No<EstadoPuzzle> no : solucao) {
-				System.out.printf("Movimento: %s\n", no.getEstado());
+				if (no.getOperador() != null)
+					System.out.printf("%s: %s\n\n", no.getOperador().toString(), no.getEstado());
+				else
+					System.out.printf("START:%s\n\n", no.getEstado());
 			}
 		}
 	}
@@ -33,13 +35,13 @@ public class ResPuzzle {
 	public static void main(String[] args) {
 		
 		int[][] confpuzzleA = {{1,2,3}, {8,4,5}, {6,7,0}};
-		int[][] confpuzzleB = {{8,4,5}, {6,1,2}, {3,7,0}};
-		int[][] confpuzzleE = {{1,2,3}, {4,5,6}, {7,0,8}};
+//		int[][] confpuzzleB = {{8,4,5}, {6,1,2}, {3,7,0}};
+//		int[][] confpuzzleE = {{1,2,3}, {4,5,6}, {0,7,8}};
 		int[][] confpuzzleFim = {{1,2,3}, {4,5,6}, {7,8,0}};
 		
 		Puzzle puzzleA = new Puzzle(confpuzzleA);
-		Puzzle puzzleB = new Puzzle(confpuzzleB);
-		Puzzle puzzleE = new Puzzle(confpuzzleE);
+//		Puzzle puzzleB = new Puzzle(confpuzzleB);
+//		Puzzle puzzleE = new Puzzle(confpuzzleE);
 		Puzzle puzzleFim = new Puzzle(confpuzzleFim);
 		
 //		Puzzle puzzle2 = puzzleA.movimentar(Puzzle.Movimento.CIMA);
@@ -53,9 +55,9 @@ public class ResPuzzle {
 		ProblemaPuzzle problema = new ProblemaPuzzle(puzzleA, puzzleFim, operadores);
 		
 		//Procurar solucao
-		ProcuraLarg<EstadoPuzzle> mecProc = new ProcuraLarg<EstadoPuzzle>();
+		ProcuraProf<EstadoPuzzle> mecProc = new ProcuraProf<EstadoPuzzle>();
 		// é preciso fazer na class solucao a implementacao Iterable
-		Solucao<EstadoPuzzle> solucao = mecProc.procurar(problema);
+		Solucao<EstadoPuzzle> solucao = mecProc.procurar(problema, 15);
 		
 		//Mostrar Trajecto
 		mostrarTrajecto(solucao);
