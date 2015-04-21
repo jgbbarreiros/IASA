@@ -1,6 +1,6 @@
 package respuzzle.modprob;
 
-import pee.Operador;
+import pee.modprob.Operador;
 import puzzle.Puzzle;
 
 public class OperadorMoverPosVazia implements Operador<EstadoPuzzle> {
@@ -21,8 +21,7 @@ public class OperadorMoverPosVazia implements Operador<EstadoPuzzle> {
 
 	@Override
 	public Double custo(EstadoPuzzle estado, EstadoPuzzle estadoSuc) {
-		// TODO Auto-generated method stub
-		return null;
+		return 1.0;
 	}
 
 	@Override
