@@ -1,6 +1,6 @@
 package respuzzle.modprob;
 
-import pee.Estado;
+import pee.modprob.Estado;
 import puzzle.Puzzle;
 
 public class EstadoPuzzle extends Estado {

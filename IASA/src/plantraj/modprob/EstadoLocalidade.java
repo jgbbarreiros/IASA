@@ -1,6 +1,6 @@
 package plantraj.modprob;
 
-import pee.Estado;
+import pee.modprob.Estado;
 
 public class EstadoLocalidade extends Estado {
 	

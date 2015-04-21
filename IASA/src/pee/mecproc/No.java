@@ -1,4 +1,7 @@
-package pee;
+package pee.mecproc;
+
+import pee.modprob.Estado;
+import pee.modprob.Operador;
 
 public class No<E extends Estado> {
 	

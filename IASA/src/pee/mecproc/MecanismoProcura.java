@@ -1,9 +1,14 @@
-package pee;
+package pee.mecproc;
 
-public abstract class MecanismoProcura<E extends Estado> {
+import pee.mecproc.mem.MemoriaProcura;
+import pee.modprob.Estado;
+import pee.modprob.Operador;
+import pee.modprob.Problema;
+
+public abstract class MecanismoProcura<E extends Estado, P extends Problema<E>> {
 	
 	private MemoriaProcura<E> memoriaProcura;
-	private Problema<E> problema;
+	protected P problema;
 	
 	public MecanismoProcura() {
 		memoriaProcura = iniciarMemoria();
@@ -11,11 +16,11 @@ public abstract class MecanismoProcura<E extends Estado> {
 	
 	protected abstract MemoriaProcura<E> iniciarMemoria();
 	
-	public Solucao<E> procurar(Problema<E> problema) {
+	public Solucao<E> procurar(P problema) {
 		return procurar(problema, Integer.MAX_VALUE);
 	}
 	
-	public Solucao<E> procurar(Problema<E> problema, int profMax) {
+	public Solucao<E> procurar(P problema, int profMax) {
 		this.problema = problema;
 		memoriaProcura.limpar();
 		E estadoInicial = problema.getEstadoInicial();

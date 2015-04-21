@@ -1,6 +1,6 @@
 package plantraj.modprob;
 
-import pee.Operador;
+import pee.modprob.Operador;
 
 public class OperadorLigacao implements Operador<EstadoLocalidade> {
 	

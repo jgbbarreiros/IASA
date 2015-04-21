@@ -1,8 +1,15 @@
-package pee;
+package pee.melhorprim;
 
 import java.util.Comparator;
 
-public abstract class ProcuraMelhorPrim<E extends Estado> extends MecanismoProcura<E> implements Comparator<No<E>> {
+import pee.mecproc.MecanismoProcura;
+import pee.mecproc.No;
+import pee.mecproc.mem.MemoriaPrioridade;
+import pee.mecproc.mem.MemoriaProcura;
+import pee.modprob.Estado;
+import pee.modprob.Problema;
+
+public abstract class ProcuraMelhorPrim<E extends Estado, P extends Problema<E>> extends MecanismoProcura<E, P> implements Comparator<No<E>> {
 
 	@Override
 	protected MemoriaProcura<E> iniciarMemoria() {

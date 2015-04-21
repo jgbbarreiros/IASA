@@ -1,7 +1,9 @@
-package pee;
+package pee.mecproc;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+
+import pee.modprob.Estado;
 
 public class Solucao<E extends Estado> implements Iterable<No<E>> {
 	

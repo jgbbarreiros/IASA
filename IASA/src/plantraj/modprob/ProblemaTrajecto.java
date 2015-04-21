@@ -1,6 +1,6 @@
 package plantraj.modprob;
 
-import pee.Problema;
+import pee.modprob.Problema;
 
 public class ProblemaTrajecto extends Problema<EstadoLocalidade> {
 	

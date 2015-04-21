@@ -1,8 +1,8 @@
 package respuzzle;
 
-import pee.No;
-import pee.ProcuraProf;
-import pee.Solucao;
+import pee.mecproc.No;
+import pee.mecproc.Solucao;
+import pee.prof.ProcuraProf;
 import puzzle.Puzzle;
 import respuzzle.modprob.EstadoPuzzle;
 import respuzzle.modprob.OperadorMoverPosVazia;
@@ -55,7 +55,7 @@ public class ResPuzzle {
 		ProblemaPuzzle problema = new ProblemaPuzzle(puzzleA, puzzleFim, operadores);
 		
 		//Procurar solucao
-		ProcuraProf<EstadoPuzzle> mecProc = new ProcuraProf<EstadoPuzzle>();
+		ProcuraProf<EstadoPuzzle, ProblemaPuzzle> mecProc = new ProcuraProf<EstadoPuzzle, ProblemaPuzzle>();
 		// é preciso fazer na class solucao a implementacao Iterable
 		Solucao<EstadoPuzzle> solucao = mecProc.procurar(problema, 15);
 		

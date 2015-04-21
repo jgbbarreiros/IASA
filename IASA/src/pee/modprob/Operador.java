@@ -1,4 +1,4 @@
-package pee;
+package pee.modprob;
 
 public interface Operador<E extends Estado> {
 	
