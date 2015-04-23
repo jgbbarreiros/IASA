@@ -24,7 +24,7 @@ public class No<E extends Estado> {
 		this.operador = operador;
 		this.antecessor = antecessor;
 		profundidade = antecessor.getProfundidade() + 1;
-//		custo = antecessor.getCusto() + operador.custo(antecessor.getEstado(), estado);
+		custo = antecessor.getCusto() + operador.custo(antecessor.getEstado(), estado);
 	}
 
 	public E getEstado() {
