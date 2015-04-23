@@ -2,7 +2,7 @@ package respuzzle;
 
 import pee.mecproc.No;
 import pee.mecproc.Solucao;
-import pee.melhorprim.ProcuraCustoUnif;
+import pee.melhorprim.ProcuraSofrega;
 import puzzle.Puzzle;
 import respuzzle.modprob.EstadoPuzzle;
 import respuzzle.modprob.OperadorMoverPosVazia;
@@ -51,8 +51,9 @@ public class ResPuzzle {
 		ProblemaPuzzle problema = new ProblemaPuzzle(puzzleB, puzzleFim, operadores);
 		
 		//Procurar solucao
-		ProcuraCustoUnif<EstadoPuzzle, ProblemaPuzzle> mecProc = new ProcuraCustoUnif<EstadoPuzzle, ProblemaPuzzle>();
-		Solucao<EstadoPuzzle> solucao = mecProc.procurar(problema, 26);
+//		ProcuraCustoUnif<EstadoPuzzle> mecProc = new ProcuraCustoUnif<EstadoPuzzle>();
+		ProcuraSofrega<EstadoPuzzle> mecProc = new ProcuraSofrega<EstadoPuzzle>();
+		Solucao<EstadoPuzzle> solucao = mecProc.procurar(problema);
 		
 		//Mostrar Trajecto
 		mostrarTrajecto(solucao);
