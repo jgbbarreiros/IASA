@@ -19,7 +19,6 @@ public class ProblemaPuzzle extends ProblemaHeur<EstadoPuzzle> {
 
 	@Override
 	public double heuristica(EstadoPuzzle estado) {
-		// TODO Auto-generated method stub
-		return 0;
+		return estado.getPuzzle().distManhattan(estadoFinal.getPuzzle());
 	}
 }
