@@ -6,7 +6,7 @@ import pee.mecproc.mem.MemoriaProcura;
 import pee.modprob.Estado;
 import pee.modprob.Problema;
 
-public class ProcuraLarg<E extends Estado, P extends Problema<E>> extends MecanismoProcura<E, P> {
+public class ProcuraLarg<E extends Estado> extends MecanismoProcura<E, Problema<E>> {
 
 	@Override
 	protected MemoriaProcura<E> iniciarMemoria() {

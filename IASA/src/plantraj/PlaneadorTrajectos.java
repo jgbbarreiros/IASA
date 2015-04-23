@@ -43,7 +43,7 @@ public class PlaneadorTrajectos {
 		ProblemaTrajecto problema = new ProblemaTrajecto("loc0", "loc4", operadores);
 		
 		//Procurar solucao
-		ProcuraCustoUnif<EstadoLocalidade, ProblemaTrajecto> mecProc = new ProcuraCustoUnif<EstadoLocalidade, ProblemaTrajecto>();
+		ProcuraCustoUnif<EstadoLocalidade> mecProc = new ProcuraCustoUnif<EstadoLocalidade>();
 		// é preciso fazer na class solucao a implementacao Iterable
 		Solucao<EstadoLocalidade> solucao = mecProc.procurar(problema);
 		
