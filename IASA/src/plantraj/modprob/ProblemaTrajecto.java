@@ -1,8 +1,8 @@
 package plantraj.modprob;
 
-import pee.modprob.Problema;
+import pee.modprob.ProblemaHeur;
 
-public class ProblemaTrajecto extends Problema<EstadoLocalidade> {
+public class ProblemaTrajecto extends ProblemaHeur<EstadoLocalidade> {
 	
 	private EstadoLocalidade estadoFinal;
 
@@ -14,6 +14,12 @@ public class ProblemaTrajecto extends Problema<EstadoLocalidade> {
 	@Override
 	public boolean objectivo(EstadoLocalidade estado) {
 		return estado.equals(estadoFinal);
+	}
+
+	@Override
+	public double heuristica(EstadoLocalidade estado) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

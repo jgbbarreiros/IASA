@@ -1,9 +1,9 @@
 package respuzzle.modprob;
 
-import pee.modprob.Problema;
+import pee.modprob.ProblemaHeur;
 import puzzle.Puzzle;
 
-public class ProblemaPuzzle extends Problema<EstadoPuzzle> {
+public class ProblemaPuzzle extends ProblemaHeur<EstadoPuzzle> {
 	
 	private EstadoPuzzle estadoFinal;
 
@@ -15,5 +15,11 @@ public class ProblemaPuzzle extends Problema<EstadoPuzzle> {
 	@Override
 	public boolean objectivo(EstadoPuzzle estado) {
 		return estado.equals(estadoFinal);
+	}
+
+	@Override
+	public double heuristica(EstadoPuzzle estado) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
