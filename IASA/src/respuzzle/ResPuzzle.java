@@ -2,7 +2,7 @@ package respuzzle;
 
 import pee.mecproc.No;
 import pee.mecproc.Solucao;
-import pee.prof.ProcuraProf;
+import pee.melhorprim.ProcuraCustoUnif;
 import puzzle.Puzzle;
 import respuzzle.modprob.EstadoPuzzle;
 import respuzzle.modprob.OperadorMoverPosVazia;
@@ -34,30 +34,25 @@ public class ResPuzzle {
 	
 	public static void main(String[] args) {
 		
-		int[][] confpuzzleA = {{1,2,3}, {8,4,5}, {6,7,0}};
-//		int[][] confpuzzleB = {{8,4,5}, {6,1,2}, {3,7,0}};
+//		int[][] confpuzzleA = {{1,2,3}, {8,4,5}, {6,7,0}};
+		int[][] confpuzzleB = {{8,4,5}, {6,1,2}, {3,7,0}};
 //		int[][] confpuzzleE = {{1,2,3}, {4,5,6}, {0,7,8}};
 		int[][] confpuzzleFim = {{1,2,3}, {4,5,6}, {7,8,0}};
 		
-		Puzzle puzzleA = new Puzzle(confpuzzleA);
-//		Puzzle puzzleB = new Puzzle(confpuzzleB);
+//		Puzzle puzzleA = new Puzzle(confpuzzleA);
+		Puzzle puzzleB = new Puzzle(confpuzzleB);
 //		Puzzle puzzleE = new Puzzle(confpuzzleE);
 		Puzzle puzzleFim = new Puzzle(confpuzzleFim);
-		
-//		Puzzle puzzle2 = puzzleA.movimentar(Puzzle.Movimento.CIMA);
-//		
-//		System.out.println(puzzle2);
 		
 		//Definir operadores
 		OperadorMoverPosVazia[] operadores = definirOperadores();
 		
 		//Definir problema
-		ProblemaPuzzle problema = new ProblemaPuzzle(puzzleA, puzzleFim, operadores);
+		ProblemaPuzzle problema = new ProblemaPuzzle(puzzleB, puzzleFim, operadores);
 		
 		//Procurar solucao
-		ProcuraProf<EstadoPuzzle, ProblemaPuzzle> mecProc = new ProcuraProf<EstadoPuzzle, ProblemaPuzzle>();
-		// é preciso fazer na class solucao a implementacao Iterable
-		Solucao<EstadoPuzzle> solucao = mecProc.procurar(problema, 15);
+		ProcuraCustoUnif<EstadoPuzzle, ProblemaPuzzle> mecProc = new ProcuraCustoUnif<EstadoPuzzle, ProblemaPuzzle>();
+		Solucao<EstadoPuzzle> solucao = mecProc.procurar(problema, 26);
 		
 		//Mostrar Trajecto
 		mostrarTrajecto(solucao);

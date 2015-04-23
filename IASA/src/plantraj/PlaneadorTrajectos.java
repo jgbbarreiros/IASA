@@ -1,8 +1,8 @@
 package plantraj;
 
-import pee.larg.ProcuraLarg;
 import pee.mecproc.No;
 import pee.mecproc.Solucao;
+import pee.melhorprim.ProcuraCustoUnif;
 import plantraj.modprob.EstadoLocalidade;
 import plantraj.modprob.OperadorLigacao;
 import plantraj.modprob.ProblemaTrajecto;
@@ -43,7 +43,7 @@ public class PlaneadorTrajectos {
 		ProblemaTrajecto problema = new ProblemaTrajecto("loc0", "loc4", operadores);
 		
 		//Procurar solucao
-		ProcuraLarg<EstadoLocalidade, ProblemaTrajecto> mecProc = new ProcuraLarg<EstadoLocalidade, ProblemaTrajecto>();
+		ProcuraCustoUnif<EstadoLocalidade, ProblemaTrajecto> mecProc = new ProcuraCustoUnif<EstadoLocalidade, ProblemaTrajecto>();
 		// é preciso fazer na class solucao a implementacao Iterable
 		Solucao<EstadoLocalidade> solucao = mecProc.procurar(problema);
 		
