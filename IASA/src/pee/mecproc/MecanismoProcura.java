@@ -46,6 +46,8 @@ public abstract class MecanismoProcura<E extends Estado, P extends Problema<E>> 
 			solucao.juntarInicio(noTemp);
 			noTemp = noTemp.getAntecessor();
 		}
+		solucao.setNumMaxNos(memoriaProcura.getNumMaxNos());
+		solucao.setNumNosExp(memoriaProcura.getNumNosExp());
 		return solucao;
 	}
 	
