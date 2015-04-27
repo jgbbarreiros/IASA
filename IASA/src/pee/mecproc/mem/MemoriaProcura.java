@@ -11,7 +11,7 @@ public class MemoriaProcura<E extends Estado> {
 	
 	private Queue<No<E>> fronteira;
 	private Map<E, No<E>> explorados = new HashMap<E, No<E>>();
-	private int numMaxNos;
+	private int numMaxNos = 0;
 	private int numNosExp = 0;
 	
 	public MemoriaProcura(Queue<No<E>> fronteira) {
@@ -31,8 +31,8 @@ public class MemoriaProcura<E extends Estado> {
 			explorados.put(estado, no);
 			if (fronteira.size() > numMaxNos)
 				numMaxNos = fronteira.size();
-			numNosExp++;
 		}
+		numNosExp++;
 	}
 	
 	public No<E> remover() {

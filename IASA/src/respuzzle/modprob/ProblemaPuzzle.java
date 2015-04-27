@@ -19,6 +19,6 @@ public class ProblemaPuzzle extends ProblemaHeur<EstadoPuzzle> {
 
 	@Override
 	public double heuristica(EstadoPuzzle estado) {
-		return estado.getPuzzle().numPecasForaLugar(estadoFinal.getPuzzle());
+		return estado.getPuzzle().distManhattan(estadoFinal.getPuzzle());
 	}
 }
