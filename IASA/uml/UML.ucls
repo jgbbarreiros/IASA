@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.8" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true">  
-  <interface id="1" language="java" name="pee.modprob.Operador" project="IASA" 
-    file="/IASA/src/pee/modprob/Operador.java" binary="false" corner="BOTTOM_RIGHT">    
+  <interface id="1" language="java" name="pee.modprob.Operador" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/modprob/Operador.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="99" width="112" x="596" y="998"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="2" language="java" name="pee.prof.ProcuraProfIter" project="IASA" 
-    file="/IASA/src/pee/prof/ProcuraProfIter.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="pee.prof.ProcuraProfIter" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/prof/ProcuraProfIter.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="117" width="226" x="1070" y="723"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="pee.melhorprim.ProcuraCustoUnif" project="IASA" 
-    file="/IASA/src/pee/melhorprim/ProcuraCustoUnif.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="pee.melhorprim.ProcuraCustoUnif" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/melhorprim/ProcuraCustoUnif.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="99" width="146" x="1336" y="723"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,8 +28,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="respuzzle.modprob.ProblemaPuzzle" project="IASA" 
-    file="/IASA/src/respuzzle/modprob/ProblemaPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="respuzzle.modprob.ProblemaPuzzle" project="IASA-PEE" 
+    file="/IASA-PEE/src/respuzzle/modprob/ProblemaPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="117" width="307" x="926" y="998"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -37,8 +37,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="pee.mecproc.Solucao" project="IASA" file="/IASA/src/pee/mecproc/Solucao.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="5" language="java" name="pee.mecproc.Solucao" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/mecproc/Solucao.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="225" width="148" x="622" y="458"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -46,8 +46,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="pee.mecproc.mem.MemoriaLIFO" project="IASA" 
-    file="/IASA/src/pee/mecproc/mem/MemoriaLIFO.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="6" language="java" name="pee.mecproc.mem.MemoriaLIFO" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/mecproc/mem/MemoriaLIFO.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="81" width="120" x="16" y="723"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -55,8 +55,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="pee.melhorprim.ProcuraSofrega" project="IASA" 
-    file="/IASA/src/pee/melhorprim/ProcuraSofrega.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="7" language="java" name="pee.melhorprim.ProcuraSofrega" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/melhorprim/ProcuraSofrega.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="99" width="136" x="1522" y="723"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -64,8 +64,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="respuzzle.modprob.OperadorMoverPosVazia" project="IASA" 
-    file="/IASA/src/respuzzle/modprob/OperadorMoverPosVazia.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="8" language="java" name="respuzzle.modprob.OperadorMoverPosVazia" project="IASA-PEE" 
+    file="/IASA-PEE/src/respuzzle/modprob/OperadorMoverPosVazia.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="701" y="1249"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -73,8 +73,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="pee.mecproc.mem.MemoriaProcura" project="IASA" 
-    file="/IASA/src/pee/mecproc/mem/MemoriaProcura.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="9" language="java" name="pee.mecproc.mem.MemoriaProcura" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/mecproc/mem/MemoriaProcura.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="225" width="187" x="395" y="458"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -82,8 +82,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="pee.mecproc.mem.MemoriaPrioridade" project="IASA" 
-    file="/IASA/src/pee/mecproc/mem/MemoriaPrioridade.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="10" language="java" name="pee.mecproc.mem.MemoriaPrioridade" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/mecproc/mem/MemoriaPrioridade.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="81" width="221" x="176" y="723"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -91,8 +91,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="respuzzle.modprob.EstadoPuzzle" project="IASA" 
-    file="/IASA/src/respuzzle/modprob/EstadoPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="11" language="java" name="respuzzle.modprob.EstadoPuzzle" project="IASA-PEE" 
+    file="/IASA-PEE/src/respuzzle/modprob/EstadoPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="902" y="1249"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -100,8 +100,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="pee.mecproc.mem.MemoriaFIFO" project="IASA" 
-    file="/IASA/src/pee/mecproc/mem/MemoriaFIFO.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="12" language="java" name="pee.mecproc.mem.MemoriaFIFO" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/mecproc/mem/MemoriaFIFO.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="81" width="119" x="437" y="723"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -109,8 +109,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="pee.melhorprim.ProcuraAA" project="IASA" 
-    file="/IASA/src/pee/melhorprim/ProcuraAA.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="13" language="java" name="pee.melhorprim.ProcuraAA" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/melhorprim/ProcuraAA.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="99" width="107" x="1698" y="723"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -118,8 +118,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="pee.prof.ProcuraProf" project="IASA" file="/IASA/src/pee/prof/ProcuraProf.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="14" language="java" name="pee.prof.ProcuraProf" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/prof/ProcuraProf.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="99" width="201" x="1024" y="458"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -127,8 +127,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="pee.mecproc.MecanismoProcura" project="IASA" 
-    file="/IASA/src/pee/mecproc/MecanismoProcura.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="15" language="java" name="pee.mecproc.MecanismoProcura" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/mecproc/MecanismoProcura.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="171" width="212" x="810" y="247"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -136,8 +136,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="16" language="java" name="pee.modprob.Problema" project="IASA" file="/IASA/src/pee/modprob/Problema.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="16" language="java" name="pee.modprob.Problema" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/modprob/Problema.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="135" width="174" x="810" y="458"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -145,8 +145,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="pee.larg.ProcuraLarg" project="IASA" file="/IASA/src/pee/larg/ProcuraLarg.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="17" language="java" name="pee.larg.ProcuraLarg" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/larg/ProcuraLarg.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="99" width="201" x="154" y="458"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -154,7 +154,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="18" language="java" name="pee.mecproc.No" project="IASA" file="/IASA/src/pee/mecproc/No.java" 
+  <class id="18" language="java" name="pee.mecproc.No" project="IASA-PEE" file="/IASA-PEE/src/pee/mecproc/No.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="225" width="162" x="596" y="723"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -163,8 +163,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="19" language="java" name="pee.modprob.Estado" project="IASA" file="/IASA/src/pee/modprob/Estado.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="19" language="java" name="pee.modprob.Estado" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/modprob/Estado.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="135" width="138" x="748" y="998"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -172,8 +172,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="20" language="java" name="pee.modprob.ProblemaHeur" project="IASA" 
-    file="/IASA/src/pee/modprob/ProblemaHeur.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="20" language="java" name="pee.modprob.ProblemaHeur" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/modprob/ProblemaHeur.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="99" width="180" x="850" y="723"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -181,8 +181,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="21" language="java" name="respuzzle.ResPuzzle" project="IASA" file="/IASA/src/respuzzle/ResPuzzle.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="21" language="java" name="respuzzle.ResPuzzle" project="IASA-PEE" 
+    file="/IASA-PEE/src/respuzzle/ResPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="135" width="252" x="132" y="247"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -190,8 +190,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="22" language="java" name="pee.melhorprim.ProcuraMelhorPrim" project="IASA" 
-    file="/IASA/src/pee/melhorprim/ProcuraMelhorPrim.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="22" language="java" name="pee.melhorprim.ProcuraMelhorPrim" project="IASA-PEE" 
+    file="/IASA-PEE/src/pee/melhorprim/ProcuraMelhorPrim.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="135" width="201" x="1342" y="458"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -200,154 +200,198 @@
     </display>  
   </class>  
   <association id="23">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="24" name="antecessor"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="24" name="fronteira">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="25" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="18" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="26">    
-    <bendpoint x="798" y="723"/>    
-    <bendpoint x="725" y="932"/>    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="27" name="operadores"/>      
-      <multiplicity id="28" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="29">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="14"/>  
+  <generalization id="26">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="22"/>  
   </generalization>  
-  <generalization id="30">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="19"/>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
   </generalization>  
-  <association id="31">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="32" name="estadoFinal"/>      
-      <multiplicity id="33" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="34">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="9"/>  
-  </generalization>  
-  <association id="35">    
+  <association id="28">    
     <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="36" name="problema"/>      
-      <multiplicity id="37" minimum="0" maximum="1"/>    
+      <attribute id="29" name="problema">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="30" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="16" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="38">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="39" name="fronteira"/>      
-      <multiplicity id="40" minimum="0" maximum="2147483647"/>    
+  <association id="31">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="32" name="antecessor">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="33" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="18" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="41">    
+  <generalization id="34">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="37">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="38" name="estadoFinal">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="39" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="40">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <generalization id="41">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <generalization id="43">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="44">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <association id="45">    
     <bendpoint x="819" y="723"/>    
     <bendpoint x="819" y="837"/>    
     <bendpoint x="920" y="949"/>    
     <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="42" name="estadoInicial"/>      
-      <multiplicity id="43" minimum="0" maximum="1"/>    
+      <attribute id="46" name="estadoInicial">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="47" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="19" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="44">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="22"/>  
-  </generalization>  
-  <generalization id="45">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="20"/>  
-  </generalization>  
-  <generalization id="46">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="22"/>  
-  </generalization>  
-  <association id="47">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="48" name="estado"/>      
-      <multiplicity id="49" minimum="0" maximum="1"/>    
+  <association id="48">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="49" name="explorados">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="50" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="19" navigable="true"/>    
+    <end type="TARGET" refId="18" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="50">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="22"/>  
-  </generalization>  
   <association id="51">    
-    <bendpoint x="631" y="421"/>    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="52" name="memoriaProcura"/>      
-      <multiplicity id="53" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="54">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="15"/>  
-  </generalization>  
-  <generalization id="55">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="15"/>  
-  </generalization>  
-  <association id="56">    
-    <bendpoint x="576" y="973"/>    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="57" name="operador"/>      
-      <multiplicity id="58" minimum="0" maximum="1"/>    
+    <bendpoint x="798" y="723"/>    
+    <bendpoint x="725" y="932"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="52" name="operadores">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="53" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="59">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="9"/>  
+  <generalization id="54">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="15"/>  
   </generalization>  
-  <generalization id="60">    
+  <realization id="55">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="56">    
+    <bendpoint x="576" y="973"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="57" name="operador">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="58" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="59">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="60" name="estado">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="61" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="62">    
     <end type="SOURCE" refId="20"/>    
     <end type="TARGET" refId="16"/>  
   </generalization>  
-  <association id="61">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="62" name="explorados"/>      
-      <multiplicity id="63" minimum="0" maximum="2147483647"/>    
+  <generalization id="63">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="14"/>  
+  </generalization>  
+  <association id="64">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="65" name="percurso">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="66" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="18" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="64">    
-    <end type="SOURCE" refId="22"/>    
-    <end type="TARGET" refId="15"/>  
-  </generalization>  
-  <realization id="65">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
-  <generalization id="66">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="9"/>  
-  </generalization>  
   <association id="67">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="68" name="percurso"/>      
-      <multiplicity id="69" minimum="0" maximum="2147483647"/>    
+    <bendpoint x="631" y="421"/>    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="68" name="memoriaProcura">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="69" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
